@@ -1,0 +1,403 @@
+body {
+	margin: 0;
+	font-family: "Lucida Grande";
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* Bagian Header */
+header {
+	height: 60px;
+	width: 100%;
+	background-color: #003265;
+	position :fixed;
+	top: 0;
+	z-index: 10;
+	box-shadow: 0 1px 2px #000;
+	font-size: 15px;
+}
+
+.logo-header {
+	float: left;
+}
+
+.logo-team {
+	width: 70px;
+	margin: 15px;
+}
+
+.nav {
+	float: right;
+}
+
+.nav a {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	line-height: 60px;
+	padding: 0 25px;
+	color: #fff;
+	display: block;
+	float: left;
+	transition: 0.5s;
+	scroll-behavior: smooth;
+}
+
+.nav a:hover {
+	background-color: #fff;
+	color: #34495e;
+}
+
+.show-menu, .hide-menu {
+	font-size: 28px;
+	cursor: pointer;
+	display: none;
+}
+
+.show-menu {
+	float: right;
+}
+
+#menu {
+	visibility: hidden;
+}
+
+
+/* Bagian Banner */
+.top-wrapper {
+	padding: 160px 0 190px 0;
+	background-image: url(img/coding.jpg);
+	background-size: cover;
+	color: white;
+	text-align: center;
+}
+
+.top-wrapper h1 {
+	font-size: 45px;
+	letter-spacing: 3px;
+	margin-bottom: 15px;
+	text-shadow: 2px 2px 4px #000;
+}
+
+.btn-wrapper {
+	position: static;
+	padding: 20px;
+	margin-top: 60px;
+}
+
+.btn-github {
+	width: 140px;
+	height: 40px;
+	padding: 8px 12px;
+	font-size: 18px;
+	font-family: sans-serif;
+	text-decoration: none;
+	color: #fff;
+	border: 2px solid #fff;
+	letter-spacing: 2px;
+	text-align: center;
+	position: relative;
+	transition: all .35s;
+}
+
+.btn-github span {
+	position: relative;
+	z-index: 2;
+}
+
+.btn-github:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background: #fff;
+	transition: all .35s;
+}
+
+.btn-github:hover {
+	color: #34495e;
+}
+
+.btn-github:hover:after {
+	width: 100%;
+}
+
+.fab {
+	margin-right: 5px;
+}
+
+
+/* Bagian Profile*/
+.profile-wrapper {
+	background-image: url(img/profile.png);
+	background-size: cover;
+	color: white;
+	text-align: center;
+}
+
+.profile-wrapper {
+	background-color: #c6af92;
+	padding: 90px 0;
+	color: #2d3436;
+	text-align: center;
+}
+
+.profile-wrapper h2 {
+	color: #34495e;
+	padding-bottom: 0px;
+	border-bottom: 3px solid #34495e;
+	margin: 0 35%; 
+}
+
+.profile-container {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	margin-top: 60px;
+}
+
+.card,
+.card .img-area {
+	background: #f7e8d5;
+	box-shadow: -2px -2px 7px #ffbd0a,
+	        	2px 2px 5px #ffbd0a;
+}
+
+.card {
+	position: relative;
+	width: 20%;
+	margin: 20px 20px;
+	padding: 5px;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	float: left;
+}
+
+.card .img-area {
+	height: 180px;
+	width: 180px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-area .inner-area {
+	height: calc(100% - 15px);
+	width: calc(100% - 15px);
+	border-radius: 50%;
+}
+
+.inner-area img {
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.card .name {
+	font-size: 22px;
+	font-weight: 500;
+	color: #2c3e50;
+	margin: 20px 0 25px 0;
+}
+
+
+.card .about {	
+	text-align: left;
+	color: #34495e;
+	font-weight: 150px;
+	font-size: 15px;
+}
+
+.about-icon {
+	text-align: center;
+}
+
+
+/* Sertifikat */
+#certificate{
+    background-color: #f7e8d5
+}
+
+.certificate-wrapper {
+    background-color: #f7e8d5;
+    padding: 100px 0 400px; /* Menyesuaikan padding-top */
+    color: #2d3436;
+}
+
+.certificate-wrapper h2 {
+    color: #34495e;
+    border-bottom: 3px solid #34495e;
+    padding-bottom: 10px;
+    margin: 0 35% 75px; /* Mengurangi nilai margin-top */
+    text-align: center;
+}
+
+.certificate-container {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	margin-top: 60px;
+} 
+
+.columns{
+    width: 25%;
+    box-sizing: border-box;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.columns img{
+    width: 100%;
+}
+
+.columns a:hover img{
+    transform: scale(1.2)
+}
+
+
+
+/* Bagian Program Organaizer */
+#partner{
+    background-color: white
+}
+
+.partner-wrapper {
+    background-color: #f7e8d5;
+    padding: 100px 0 1px; /* Menyesuaikan padding-top */
+    color: #2d3436;
+}
+
+.partner-wrapper h2 {
+	color: #34495e;
+	border-bottom: 3px solid #34495e;
+	padding-bottom: 10px;
+	margin: 50px 35% 5px; /* Mengurangi nilai margin-top */
+	text-align: center;
+}
+
+.partner-wrapper .logo-progate {
+	width: 150px;
+	margin: 60px 0 30px;
+}
+
+.partner-container {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	text-align: center;
+	padding: 0 15px
+}
+
+.partner-container img {
+	width: 120px;
+}
+
+.logos {
+	margin: 15px;
+}
+
+.logos p {
+	font-size: 10px;
+	color: #b3aeb5;
+}
+
+
+
+
+/* Bagian Footer */
+
+footer {
+	padding: 0px;
+	background-color: #003265;
+	box-shadow: 1px 0 2px 2px rgba(0,0,0,0.75);
+}
+
+footer img {
+	width: 60px;
+}
+
+footer p {
+	color: #b3aeb5;
+	font-size: 10px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+
+
+/* Contact */
+#contact{
+    background-color: #ffbd0a
+}
+
+.contact-wrapper {
+    /* background-color: #54493f; */
+    padding: 100px 0 400px; /* Menyesuaikan padding-top */
+    color: #2d3436;
+}
+
+.contact-wrapper h2 {
+    color: #34495e;
+    border-bottom: 3px solid #34495e;
+    padding-bottom: 10px;
+    margin: 0 35% 75px; /* Mengurangi nilai margin-top */
+    text-align: center;
+}
+
+.contact-wrapper h3{
+    text-align: center;
+}
+
+input[type='text'],
+input[type='e-mail'],
+input[type='number'],
+input[type='massage'],
+
+.contact-wrapper textarea{
+    width: 100%;
+	max-width: 420px; /* Sesuaikan dengan lebar maksimal yang diinginkan */
+    padding: 12px;
+    border:3px solid rgba(227, 241, 229, 0.778) ;
+    border-radius: 8px;
+    margin: 5px;
+}
+.main{
+    width: 35%;
+    padding: 12px;
+    border:3px solid rgba(227, 241, 229, 0.778) ;
+    border-radius: 8px;
+    margin: auto;
+    background-color: beige;
+    box-align: center;
+    top: 50%;
+    left: 50%;
+  
+}
+input[type='submit']{
+    padding: 12px 20px;
+    border: 3px solid beige;
+    color: white;
+    background-color: rgba(91, 220, 36, 0.727);
+    border-radius: 10px;
+    cursor: pointer;
+}
+input[type='submit']:hover{
+    color: aqua;
+}
+p{
+    text-align: center;
+}
